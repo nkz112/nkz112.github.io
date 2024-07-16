@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #e0e0e0;
+            background-color: #2e2e2e;
+            color: #d3d3d3;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #6a0dad;
+            background-color: #8e44ad;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -21,7 +21,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #800020;
+            background-color: #c0392b;
         }
         nav button {
             background: none;
@@ -33,7 +33,7 @@
             transition: background-color 0.3s;
         }
         nav button:hover {
-            background-color: #b3003b;
+            background-color: #e74c3c;
         }
         .container {
             padding: 20px;
@@ -54,7 +54,7 @@
             text-align: left;
         }
         th {
-            background-color: #6a0dad;
+            background-color: #8e44ad;
             color: white;
         }
         td input[type="checkbox"] {
@@ -62,7 +62,7 @@
             margin: 0 5px;
         }
         .section h2 {
-            border-bottom: 2px solid #6a0dad;
+            border-bottom: 2px solid #8e44ad;
             padding-bottom: 10px;
         }
         ul {
@@ -70,10 +70,18 @@
             padding: 0;
         }
         ul li {
-            background: #333;
+            background: #3e3e3e;
             margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
+        }
+        .item-list input[type="text"] {
+            width: calc(100% - 50px);
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .item-list button {
+            padding: 5px 10px;
         }
     </style>
 </head>
@@ -86,6 +94,7 @@
         <button onclick="showSection('libros')">Libros</button>
         <button onclick="showSection('horariosPesca')">Horarios de Pesca</button>
         <button onclick="showSection('miembros')">Miembros</button>
+        <button onclick="showSection('items')">Items</button>
     </nav>
     <div class="container">
         <div id="inicio" class="section">
@@ -105,183 +114,8 @@
                         <th>Volumen 5</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Estado físico</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Fuerza</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Carrera (Sprinting)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Pies Ligeros (LightFooted)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Destreza (Nimble)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Sigilo (Sneaking)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Hacha (Axe)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Arma Larga Contundente (Long Blunt)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Arma Corta Contundente (Short Blunt)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Arma de hoja larga (Long Blade)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Arma de hoja corta (Short Blade)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Lanza (Spear)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Mantenimiento (Maintenance)</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Carpintería</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Cocina</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Agricultura</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Pesca</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Caza</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Primeros Auxilios</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Electricidad</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Metalurgia</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                        <td>Mecánica</td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                        <td><input type="checkbox"></td>
-                    </tr>
+                <tbody id="booksTableBody">
+                    <!-- Filas de libros generadas por JavaScript -->
                 </tbody>
             </table>
         </div>
@@ -307,14 +141,106 @@
                 <li><strong>Rogelio:</strong> "El táctico brillante, con una mente aguda para la planificación y ejecución de operaciones complejas."</li>
             </ul>
         </div>
+        <div id="items" class="section hidden">
+            <h2>Items Faltantes</h2>
+            <div class="item-list">
+                <input type="text" id="newItem" placeholder="Agregar item...">
+                <button onclick="addItem()">Agregar</button>
+            </div>
+            <ul id="itemsList">
+                <!-- Items generados por JavaScript -->
+            </ul>
+        </div>
     </div>
     <script>
+        const skills = [
+            "Estado físico", "Fuerza", "Carrera (Sprinting)", "Pies Ligeros (LightFooted)", "Destreza (Nimble)", "Sigilo (Sneaking)",
+            "Hacha (Axe)", "Arma Larga Contundente (Long Blunt)", "Arma Corta Contundente (Short Blunt)", "Arma de hoja larga (Long Blade)",
+            "Arma de hoja corta (Short Blade)", "Lanza (Spear)", "Mantenimiento (Maintenance)", "Carpintería", "Cocina", "Agricultura",
+            "Pesca", "Caza", "Primeros Auxilios", "Electricidad", "Metalurgia", "Mecánica"
+        ];
+
+        function initializeBooks() {
+            const booksTableBody = document.getElementById("booksTableBody");
+            skills.forEach(skill => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${skill}</td>
+                    ${[1, 2, 3, 4, 5].map(vol => `<td><input type="checkbox" data-skill="${skill}" data-vol="${vol}" onchange="saveBooks()"></td>`).join('')}
+                `;
+                booksTableBody.appendChild(row);
+            });
+            loadBooks();
+        }
+
+        function saveBooks() {
+            const checkboxes = document.querySelectorAll('#booksTableBody input[type="checkbox"]');
+            const booksData = Array.from(checkboxes).map(checkbox => ({
+                skill: checkbox.dataset.skill,
+                vol: checkbox.dataset.vol,
+                checked: checkbox.checked
+            }));
+            localStorage.setItem('books', JSON.stringify(booksData));
+        }
+
+        function loadBooks() {
+            const booksData = JSON.parse(localStorage.getItem('books') || '[]');
+            booksData.forEach(data => {
+                const checkbox = document.querySelector(`#booksTableBody input[data-skill="${data.skill}"][data-vol="${data.vol}"]`);
+                if (checkbox) {
+                    checkbox.checked = data.checked;
+                }
+            });
+        }
+
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(section => {
                 section.classList.add('hidden');
             });
             document.getElementById(sectionId).classList.remove('hidden');
         }
+
+        function addItem() {
+            const newItemInput = document.getElementById("newItem");
+            const itemText = newItemInput.value.trim();
+            if (itemText === "") return;
+            
+            const itemsList = document.getElementById("itemsList");
+            const listItem = document.createElement("li");
+            listItem.textContent = itemText;
+            listItem.onclick = () => {
+                itemsList.removeChild(listItem);
+                saveItems();
+            };
+            itemsList.appendChild(listItem);
+            newItemInput.value = "";
+            saveItems();
+        }
+
+        function saveItems() {
+            const itemsList = document.getElementById("itemsList");
+            const items = Array.from(itemsList.children).map(item => item.textContent);
+            localStorage.setItem('items', JSON.stringify(items));
+        }
+
+        function loadItems() {
+            const items = JSON.parse(localStorage.getItem('items') || '[]');
+            const itemsList = document.getElementById("itemsList");
+            items.forEach(itemText => {
+                const listItem = document.createElement("li");
+                listItem.textContent = itemText;
+                listItem.onclick = () => {
+                    itemsList.removeChild(listItem);
+                    saveItems();
+                };
+                itemsList.appendChild(listItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            initializeBooks();
+            loadItems();
+        });
     </script>
 </body>
 </html>
